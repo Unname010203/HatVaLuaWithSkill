@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hạt & Lửa – Cà phê rang xay thủ công</title>
+  <meta name="description" content="Hạt & Lửa - Rang từng mẻ nhỏ, uống từng ngụm chậm. Quán cà phê rang xay thủ công thành lập năm 2021.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" aria-label="Hạt & Lửa Trang chủ">
+        <svg class="brand-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="20" cy="20" r="19" fill="#F4EAE1" stroke="#8C4A27" stroke-width="2"/>
+          <!-- Coffee bean & flame motif -->
+          <path d="M14 26C11.5 23 11 18.5 13.5 15C16.5 11 21 11.5 24 13.5C21 14 17.5 16.5 18 20.5C18.5 23.5 20.5 25 21 27C18.5 28 15.5 27.5 14 26Z" fill="#5A2E17"/>
+          <path d="M21 27C21.5 25 24.5 22.5 24 18.5C23.5 15.5 21 14 24 13.5C27 15 29 18.5 28 22.5C27 26 23.5 27.5 21 27Z" fill="#C85A17"/>
+          <path d="M19 12C18 9 20 6.5 21 5C22 7 24 8.5 23 11C22 9.5 20.5 10 19 12Z" fill="#E67E22"/>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-name">Hạt & Lửa</span>
+          <span class="brand-est">Năm thành lập: 2021</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Mở menu điều hướng" aria-expanded="false" aria-controls="primaryNav">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li><a href="#gioi-thieu" class="nav-link">Giới thiệu</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#danh-gia" class="nav-link">Đánh giá</a></li>
+          <li><a href="#dat-ban" class="nav-link nav-btn">Đặt bàn</a></li>
+          <li><a href="#lien-he" class="nav-link">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-tag">
+            <svg class="badge-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M8 1L10 6L15 8L10 10L8 15L6 10L1 8L6 6L8 1Z" fill="#C85A17"/>
+            </svg>
+            <span>Năm thành lập: 2021</span>
+          </div>
+          <h1 class="hero-title">Hạt & Lửa</h1>
+          <p class="hero-slogan">"Rang từng mẻ nhỏ, uống từng ngụm chậm."</p>
+          <div class="hero-actions">
+            <a href="#dat-ban" class="btn btn-primary">Đặt bàn ngay</a>
+            <a href="#menu" class="btn btn-secondary">Xem menu</a>
+          </div>
+
+          <div class="hero-info-pills">
+            <div class="info-pill">
+              <svg class="pill-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <circle cx="10" cy="10" r="8"/>
+                <polyline points="10 5 10 10 14 12"/>
+              </svg>
+              <span>Giờ mở cửa: 7:00 – 22:00 mỗi ngày</span>
+            </div>
+            <div class="info-pill">
+              <svg class="pill-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="M10 2C6.7 2 4 4.7 4 8C4 12.5 10 18 10 18C10 18 16 12.5 16 8C16 4.7 13.3 2 10 2Z"/>
+                <circle cx="10" cy="8" r="2.5"/>
+              </svg>
+              <span>12 Hẻm Lò Rang (địa chỉ giả lập)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-card">
+            <!-- Custom Art: Authentic 5kg Artisan Drum Coffee Roaster (SVG) -->
+            <svg class="craft-illustration" viewBox="0 0 520 460" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Hình minh họa máy rang cà phê thủ công 5 kg">
+              <defs>
+                <!-- Shadows & Lighting -->
+                <radialGradient id="roasterAmbientGlow" cx="50%" cy="45%" r="55%">
+                  <stop offset="0%" stop-color="#E5A65D" stop-opacity="0.22"/>
+                  <stop offset="60%" stop-color="#C85A17" stop-opacity="0.08"/>
+                  <stop offset="100%" stop-color="#FAF5EF" stop-opacity="0"/>
+                </radialGradient>
+                <radialGradient id="drumSightGlow" cx="45%" cy="45%" r="55%">
+                  <stop offset="0%" stop-color="#FFA84A"/>
+                  <stop offset="40%" stop-color="#C85A17"/>
+                  <stop offset="100%" stop-color="#3D1505"/>
+                </radialGradient>
+                <radialGradient id="coolingBedGlow" cx="50%" cy="40%" r="55%">
+                  <stop offset="0%" stop-color="#542813"/>
+                  <stop offset="80%" stop-color="#321407"/>
+                  <stop offset="100%" stop-color="#210C04"/>
+                </radialGradient>
+
+                <!-- Metals & Materials -->
+                <linearGradient id="hopperMetal" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#B0B8C1"/>
+                  <stop offset="25%" stop-color="#E4E9ED"/>
+                  <stop offset="50%" stop-color="#FFFFFF"/>
+                  <stop offset="75%" stop-color="#D1D8DF"/>
+                  <stop offset="100%" stop-color="#95A0AA"/>
+                </linearGradient>
+
+                <linearGradient id="drumCastIron" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#3D3835"/>
+                  <stop offset="40%" stop-color="#2A2522"/>
+                  <stop offset="85%" stop-color="#1A1715"/>
+                  <stop offset="100%" stop-color="#12100E"/>
+                </linearGradient>
+
+                <linearGradient id="brassPolished" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#FCE1A9"/>
+                  <stop offset="35%" stop-color="#E5A65D"/>
+                  <stop offset="70%" stop-color="#B8762D"/>
+                  <stop offset="100%" stop-color="#7A4711"/>
+                </linearGradient>
+
+                <linearGradient id="stainlessCooler" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#D4DBE2"/>
+                  <stop offset="40%" stop-color="#F2F5F8"/>
+                  <stop offset="70%" stop-color="#B2BCC5"/>
+                  <stop offset="100%" stop-color="#7B8793"/>
+                </linearGradient>
+
+                <linearGradient id="woodHandle" x1="0%" y1="0%" x2="100%" y2="50%">
+                  <stop offset="0%" stop-color="#8C4A26"/>
+                  <stop offset="50%" stop-color="#603014"/>
+                  <stop offset="100%" stop-color="#3D1A08"/>
+                </linearGradient>
+
+                <linearGradient id="ductMetal" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#737F8A"/>
+                  <stop offset="35%" stop-color="#CBD5DE"/>
+                  <stop offset="70%" stop-color="#9AA6B2"/>
+                  <stop offset="100%" stop-color="#55606A"/>
+                </linearGradient>
+              </defs>
+
+              <!-- Ambient backdrop aura -->
+              <ellipse cx="260" cy="225" rx="220" ry="175" fill="url(#roasterAmbientGlow)"/>
+
+              <!-- Floor Contact Shadow -->
+              <ellipse cx="265" cy="434" rx="205" ry="16" fill="#422514" fill-opacity="0.18"/>
+              <ellipse cx="330" cy="435" rx="100" ry="12" fill="#2D170A" fill-opacity="0.22"/>
+
+              <!-- ================= 1. REAR EXHAUST DUCT & CYCLONE ================= -->
+              <g id="exhaustSystem">
+                <!-- Cyclone Body (Rear Left) -->
+                <!-- Cyclone support leg -->
+                <rect x="74" y="270" width="8" height="155" rx="2" fill="#3D3835"/>
+                <rect x="106" y="270" width="8" height="155" rx="2" fill="#2A2522"/>
+                <rect x="68" y="420" width="52" height="7" rx="2" fill="#1A1715"/>
+
+                <!-- Cyclone Chaff Bucket at bottom -->
+                <rect x="70" y="240" width="48" height="42" rx="4" fill="url(#drumCastIron)" stroke="#4A4541" stroke-width="1.5"/>
+                <rect x="66" y="236" width="56" height="7" rx="2" fill="url(#brassPolished)"/>
+                <rect x="68" y="254" width="52" height="4" fill="#12100E"/>
+
+                <!-- Cyclone Funnel Cone -->
+                <polygon points="68,170 120,170 102,238 86,238" fill="url(#ductMetal)"/>
+
+                <!-- Cyclone Upper Cylinder -->
+                <rect x="68" y="115" width="52" height="58" rx="3" fill="url(#ductMetal)"/>
+                <ellipse cx="94" cy="115" rx="26" ry="6" fill="#CBD5DE"/>
+                <rect x="65" y="140" width="58" height="5" fill="#4B5563"/>
+
+                <!-- Duct from Drum to Cyclone -->
+                <path d="M152 148 H115 V130" stroke="url(#ductMetal)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                <!-- Flange ring on duct -->
+                <rect x="134" y="139" width="6" height="18" rx="1" fill="url(#brassPolished)"/>
+
+                <!-- Vertical Exhaust Stack rising to chimney -->
+                <rect x="85" y="28" width="18" height="88" fill="url(#ductMetal)"/>
+                <ellipse cx="94" cy="28" rx="9" ry="3.5" fill="#E4E9ED"/>
+                <!-- Stack damper lever -->
+                <rect x="99" y="62" width="22" height="4" rx="1" fill="url(#brassPolished)"/>
+                <circle cx="123" cy="64" r="5" fill="url(#woodHandle)"/>
+                <!-- Flange collar -->
+                <rect x="82" y="85" width="24" height="5" rx="1" fill="#4B5563"/>
+
+                <!-- Subtle steam from chimney -->
+                <path class="steam-line steam-1" d="M94 24 C88 15 98 8 92 -4" stroke="#C85A17" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                <path class="steam-line steam-2" d="M98 24 C104 14 96 6 102 -6" stroke="#E5A65D" stroke-width="2" stroke-linecap="round" fill="none"/>
+              </g>
+
+              <!-- ================= 2. MACHINE PEDESTAL / BASE CABINET ================= -->
+              <g id="pedestalBase">
+                <!-- Base housing box -->
+                <rect x="130" y="275" width="165" height="145" rx="8" fill="url(#drumCastIron)" stroke="#4A4440" stroke-width="2"/>
+                <!-- Top chamfer rim -->
+                <rect x="126" y="270" width="173" height="8" rx="3" fill="#4A4541"/>
+
+                <!-- Heavy Vibration Dampening Legs -->
+                <rect x="138" y="418" width="24" height="10" rx="3" fill="#1C1A18"/>
+                <rect x="134" y="426" width="32" height="5" rx="2.5" fill="#4B5563"/>
+                <rect x="260" y="418" width="24" height="10" rx="3" fill="#1C1A18"/>
+                <rect x="256" y="426" width="32" height="5" rx="2.5" fill="#4B5563"/>
+
+                <!-- Cooling tray support bracket legs -->
+                <rect x="330" y="380" width="16" height="48" rx="3" fill="#2A2522" stroke="#4A4541" stroke-width="1"/>
+                <rect x="324" y="426" width="28" height="5" rx="2" fill="#4B5563"/>
+
+                <!-- Control Panel Facade (Recessed) -->
+                <rect x="142" y="290" width="141" height="80" rx="5" fill="#171514" stroke="#383330" stroke-width="1.5"/>
+
+                <!-- PID Controller 1: Bean Temp (BT) -->
+                <rect x="148" y="298" width="58" height="30" rx="3" fill="#0C0B0A" stroke="#2B2725" stroke-width="1"/>
+                <text x="152" y="308" fill="#9CA3AF" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" font-weight="700">BT °C</text>
+                <text x="153" y="323" fill="#10B981" font-family="'Courier New', monospace" font-size="12" font-weight="700">204.5</text>
+
+                <!-- PID Controller 2: Environment Temp (ET) -->
+                <rect x="148" y="334" width="58" height="30" rx="3" fill="#0C0B0A" stroke="#2B2725" stroke-width="1"/>
+                <text x="152" y="344" fill="#9CA3AF" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" font-weight="700">ET °C</text>
+                <text x="153" y="359" fill="#F59E0B" font-family="'Courier New', monospace" font-size="12" font-weight="700">218.0</text>
+
+                <!-- Control Buttons & Dials -->
+                <!-- Emergency Stop Button -->
+                <circle cx="230" cy="312" r="11" fill="#F59E0B"/>
+                <circle cx="230" cy="312" r="8" fill="#DC2626"/>
+                <text x="230" y="328" text-anchor="middle" fill="#9CA3AF" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" font-weight="600">E-STOP</text>
+
+                <!-- Burner Gas & Airflow Rotary Knobs -->
+                <circle cx="260" cy="312" r="7" fill="url(#brassPolished)"/>
+                <line x1="260" y1="307" x2="260" y2="312" stroke="#12100E" stroke-width="1.5"/>
+
+                <circle cx="230" cy="348" r="7" fill="url(#brassPolished)"/>
+                <circle cx="260" cy="348" r="7" fill="url(#brassPolished)"/>
+                <text x="230" y="362" text-anchor="middle" fill="#9CA3AF" font-family="'Plus Jakarta Sans', sans-serif" font-size="6">DRUM</text>
+                <text x="260" y="362" text-anchor="middle" fill="#9CA3AF" font-family="'Plus Jakarta Sans', sans-serif" font-size="6">AIR</text>
+
+                <!-- Ventilation Louver Grille -->
+                <g fill="#0C0B0A">
+                  <rect x="148" y="382" width="130" height="3" rx="1.5"/>
+                  <rect x="148" y="388" width="130" height="3" rx="1.5"/>
+                  <rect x="148" y="394" width="130" height="3" rx="1.5"/>
+                  <rect x="148" y="400" width="130" height="3" rx="1.5"/>
+                </g>
+              </g>
+
+              <!-- ================= 3. ROASTING DRUM BODY ================= -->
+              <g id="roastingDrum">
+                <!-- Drum Main Cylinder (Horizontal profile) -->
+                <rect x="138" y="132" width="168" height="142" rx="14" fill="url(#drumCastIron)" stroke="#4A4440" stroke-width="2"/>
+
+                <!-- Polished Brass Insulation Bands around drum -->
+                <rect x="156" y="132" width="8" height="142" fill="url(#brassPolished)"/>
+                <rect x="276" y="132" width="8" height="142" fill="url(#brassPolished)"/>
+
+                <!-- Heavy Cast Iron Front Faceplate (Circular Bích Mặt Trước) -->
+                <circle cx="218" cy="205" r="62" fill="url(#drumCastIron)" stroke="#524C47" stroke-width="3"/>
+                <circle cx="218" cy="205" r="57" stroke="url(#brassPolished)" stroke-width="1.5" fill="none"/>
+
+                <!-- Perimeter Fastening Hex Bolts (12 bolts around plate) -->
+                <g fill="url(#brassPolished)">
+                  <circle cx="218" cy="148" r="3.2"/>
+                  <circle cx="248" cy="156" r="3.2"/>
+                  <circle cx="269" cy="177" r="3.2"/>
+                  <circle cx="277" cy="205" r="3.2"/>
+                  <circle cx="269" cy="233" r="3.2"/>
+                  <circle cx="248" cy="254" r="3.2"/>
+                  <circle cx="218" cy="262" r="3.2"/>
+                  <circle cx="188" cy="254" r="3.2"/>
+                  <circle cx="167" cy="233" r="3.2"/>
+                  <circle cx="159" cy="205" r="3.2"/>
+                  <circle cx="167" cy="177" r="3.2"/>
+                  <circle cx="188" cy="156" r="3.2"/>
+                </g>
+
+                <!-- Sight Glass (Kính Quan Sát Hạt Đang Rang) -->
+                <circle cx="218" cy="195" r="23" fill="url(#brassPolished)"/>
+                <circle cx="218" cy="195" r="18" fill="url(#drumSightGlow)" stroke="#7A4711" stroke-width="2"/>
+                <!-- Roasted Coffee Beans tumbling in window -->
+                <g>
+                  <ellipse cx="212" cy="191" rx="5" ry="3.5" transform="rotate(-30 212 191)" fill="#421C06"/>
+                  <line x1="209" y1="190" x2="215" y2="192" stroke="#E5A65D" stroke-width="0.8"/>
+
+                  <ellipse cx="224" cy="194" rx="4.8" ry="3.2" transform="rotate(40 224 194)" fill="#2E1303"/>
+                  <line x1="221" y1="196" x2="227" y2="192" stroke="#E5A65D" stroke-width="0.7"/>
+
+                  <ellipse cx="215" cy="203" rx="4.5" ry="3" transform="rotate(-10 215 203)" fill="#542408"/>
+
+                  <!-- Glass reflection curve -->
+                  <path d="M206 186 C214 180 226 182 231 188" stroke="#FFE6CC" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.6"/>
+                </g>
+
+                <!-- Analog Temperature Gauge (Đồng Hồ Kim Đo Nhiệt) -->
+                <g id="tempDial">
+                  <circle cx="178" cy="184" r="14" fill="url(#brassPolished)"/>
+                  <circle cx="178" cy="184" r="11" fill="#FFFFFF" stroke="#8C5338" stroke-width="1"/>
+                  <!-- Dial graduations -->
+                  <line x1="178" y1="174" x2="178" y2="177" stroke="#333" stroke-width="1"/>
+                  <line x1="186" y1="180" x2="183" y2="182" stroke="#333" stroke-width="1"/>
+                  <line x1="170" y1="180" x2="173" y2="182" stroke="#333" stroke-width="1"/>
+                  <!-- Red indicator needle -->
+                  <line x1="178" y1="184" x2="184" y2="178" stroke="#DC2626" stroke-width="1.6" stroke-linecap="round"/>
+                  <circle cx="178" cy="184" r="2" fill="#1C1A18"/>
+                </g>
+
+                <!-- Trier / Bean Sampler (Cây Thăm Hạt / Muỗng Rút Mẫu) -->
+                <g id="beanTrier">
+                  <!-- Probe socket collar -->
+                  <rect x="254" y="208" width="12" height="10" rx="2" transform="rotate(22 254 208)" fill="url(#brassPolished)"/>
+                  <!-- Stainless steel probe rod inserted into drum -->
+                  <line x1="262" y1="213" x2="288" y2="224" stroke="#CBD5DE" stroke-width="5" stroke-linecap="round"/>
+                  <!-- Solid turned wooden handle -->
+                  <path d="M285 222 L310 233 C314 235 315 238 313 241 C311 244 307 244 304 242 L279 231 Z" fill="url(#woodHandle)"/>
+                  <!-- Brass end cap -->
+                  <circle cx="310" cy="237" r="4.5" fill="url(#brassPolished)"/>
+                </g>
+
+                <!-- Discharge Chute Door & Weighted Lever (Cửa Xả Bung Mẻ Hạt) -->
+                <g id="dischargeDoor">
+                  <!-- Chute mouth guiding down to cooler -->
+                  <path d="M236 248 L275 258 L270 286 L228 276 Z" fill="#1C1714" stroke="url(#brassPolished)" stroke-width="1.5"/>
+                  <!-- Door faceplate -->
+                  <rect x="238" y="250" width="30" height="24" rx="3" transform="rotate(14 238 250)" fill="url(#drumCastIron)" stroke="url(#brassPolished)" stroke-width="1.8"/>
+                  <!-- Weighted release lever with counterweight ball -->
+                  <line x1="262" y1="256" x2="292" y2="242" stroke="url(#brassPolished)" stroke-width="3.5" stroke-linecap="round"/>
+                  <circle cx="295" cy="241" r="7" fill="url(#woodHandle)" stroke="url(#brassPolished)" stroke-width="1"/>
+                </g>
+              </g>
+
+              <!-- ================= 4. HOPPER (PHỄU NẠP HẠT XANH 5 KG) ================= -->
+              <g id="beanHopper">
+                <!-- Hopper Cast Mounting Collar -->
+                <rect x="195" y="112" width="46" height="22" rx="3" fill="url(#drumCastIron)" stroke="#4A4541" stroke-width="1.5"/>
+                <rect x="191" y="128" width="54" height="6" rx="2" fill="url(#brassPolished)"/>
+
+                <!-- Slide gate / Charge valve handle -->
+                <rect x="238" y="118" width="34" height="5" rx="1.5" fill="url(#brassPolished)"/>
+                <circle cx="274" cy="120" r="6" fill="url(#woodHandle)"/>
+
+                <!-- Stainless Steel / Brass Conical Hopper Funnel -->
+                <polygon points="172,40 264,40 236,112 200,112" fill="url(#hopperMetal)" stroke="#8A95A0" stroke-width="1.5"/>
+
+                <!-- Top opening ellipse rim -->
+                <ellipse cx="218" cy="40" rx="46" ry="12" fill="#CFD7DF" stroke="#8A95A0" stroke-width="2"/>
+                <ellipse cx="218" cy="40" rx="42" ry="10" fill="#2E4A28"/>
+
+                <!-- Green Raw Coffee Beans inside Hopper -->
+                <g fill="#5F8D4E">
+                  <ellipse cx="205" cy="39" rx="4.5" ry="3" transform="rotate(-15 205 39)"/>
+                  <ellipse cx="218" cy="41" rx="4.5" ry="3" transform="rotate(25 218 41)" fill="#4E7C3E"/>
+                  <ellipse cx="229" cy="38" rx="4.5" ry="2.8" transform="rotate(-35 229 38)" fill="#689E56"/>
+                  <ellipse cx="212" cy="43" rx="4" ry="2.5" transform="rotate(10 212 43)" fill="#7CAE6A"/>
+                  <ellipse cx="224" cy="44" rx="4" ry="2.5" fill="#5F8D4E"/>
+                </g>
+
+                <!-- High-shine reflective highlight on hopper cone -->
+                <polygon points="214,46 226,46 218,110 210,110" fill="#FFFFFF" opacity="0.45"/>
+
+                <!-- Brass Badge Plaque: "5 KG" -->
+                <rect x="201" y="70" width="34" height="18" rx="4" fill="url(#brassPolished)" stroke="#7A4711" stroke-width="1.2"/>
+                <text x="218" y="83" text-anchor="middle" fill="#2A140A" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="800" letter-spacing="0.05em">5 KG</text>
+              </g>
+
+              <!-- ================= 5. COOLING TRAY & AGITATOR (NONG LÀM NGUỘI) ================= -->
+              <g id="coolingTray">
+                <!-- Cooling Tray Outer Wall / Stainless Steel Basin (Depth & Cylinder) -->
+                <!-- Under tray bottom shadow -->
+                <ellipse cx="340" cy="368" rx="98" ry="34" fill="#1C1109" fill-opacity="0.35"/>
+
+                <!-- Outer lower cylindrical skirt -->
+                <path d="M242 334 C242 358 286 376 340 376 C394 376 438 358 438 334 V352 C438 376 394 394 340 394 C286 394 242 376 242 352 Z" fill="url(#stainlessCooler)" stroke="#6C7884" stroke-width="1.5"/>
+
+                <!-- Cooling tray perforated bed filled with fresh roasted coffee beans -->
+                <ellipse cx="340" cy="334" rx="96" ry="34" fill="url(#coolingBedGlow)" stroke="#8A96A2" stroke-width="3"/>
+
+                <!-- Freshly roasted coffee beans texture in tray -->
+                <g fill="#4A220F">
+                  <ellipse cx="280" cy="332" rx="4" ry="2.8" transform="rotate(20 280 332)"/>
+                  <ellipse cx="295" cy="342" rx="4.2" ry="2.6" transform="rotate(-30 295 342)" fill="#3A1708"/>
+                  <ellipse cx="312" cy="326" rx="4" ry="2.8" transform="rotate(15 312 326)" fill="#542914"/>
+                  <ellipse cx="328" cy="348" rx="4.5" ry="3" transform="rotate(-10 328 348)" fill="#2A1005"/>
+                  <ellipse cx="348" cy="322" rx="4" ry="2.8" transform="rotate(45 348 322)" fill="#542914"/>
+                  <ellipse cx="366" cy="340" rx="4.2" ry="2.8" transform="rotate(-25 366 340)" fill="#3A1708"/>
+                  <ellipse cx="384" cy="328" rx="4.5" ry="3" transform="rotate(10 384 328)" fill="#4A220F"/>
+                  <ellipse cx="400" cy="338" rx="4" ry="2.6" transform="rotate(35 400 338)" fill="#2A1005"/>
+                  <ellipse cx="304" cy="354" rx="4.2" ry="2.8" transform="rotate(-40 304 354)" fill="#542914"/>
+                  <ellipse cx="355" cy="356" rx="4.5" ry="3" transform="rotate(20 355 356)" fill="#3A1708"/>
+                  <ellipse cx="380" cy="350" rx="4.2" ry="2.8" transform="rotate(-15 380 350)" fill="#4A220F"/>
+                  <ellipse cx="270" cy="326" rx="3.8" ry="2.5" fill="#3A1708"/>
+                  <ellipse cx="415" cy="332" rx="3.8" ry="2.5" fill="#542914"/>
+                </g>
+
+                <!-- Center Rotating Agitator Hub (Trục khuấy trung tâm) -->
+                <ellipse cx="340" cy="332" rx="14" ry="6" fill="url(#brassPolished)"/>
+                <rect x="333" y="322" width="14" height="10" fill="url(#brassPolished)"/>
+                <ellipse cx="340" cy="322" rx="7" ry="3" fill="#FFE5B4"/>
+
+                <!-- 3 Rotating Stainless Stirring Arms (Cánh đảo làm nguội) -->
+                <!-- Arm 1 (sweeping left) -->
+                <path d="M334 332 C305 328 275 336 256 342" stroke="url(#hopperMetal)" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+                <rect x="272" y="335" width="4" height="9" rx="1" fill="#4B5563"/>
+                <rect x="294" y="333" width="4" height="9" rx="1" fill="#4B5563"/>
+
+                <!-- Arm 2 (sweeping front right) -->
+                <path d="M346 333 C372 338 398 348 420 346" stroke="url(#hopperMetal)" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+                <rect x="375" y="341" width="4" height="9" rx="1" fill="#4B5563"/>
+                <rect x="398" y="344" width="4" height="9" rx="1" fill="#4B5563"/>
+
+                <!-- Arm 3 (sweeping rear right) -->
+                <path d="M344 330 C370 324 395 322 416 325" stroke="url(#hopperMetal)" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+                <rect x="378" y="322" width="4" height="8" rx="1" fill="#4B5563"/>
+
+                <!-- Upper polished rim ring -->
+                <ellipse cx="340" cy="332" rx="98" ry="34" stroke="url(#hopperMetal)" stroke-width="3" fill="none"/>
+
+                <!-- Cooling Tray Discharge Gate (Cửa ra hạt sau làm nguội) -->
+                <rect x="424" y="342" width="12" height="18" rx="2" fill="url(#brassPolished)" stroke="#7A4711" stroke-width="1"/>
+                <rect x="434" y="346" width="12" height="4" rx="1" fill="url(#brassPolished)"/>
+                <circle cx="448" cy="348" r="4" fill="url(#woodHandle)"/>
+              </g>
+
+              <!-- Machine Brand Nameplate On Drum Base -->
+              <rect x="175" y="278" width="76" height="13" rx="2.5" fill="url(#brassPolished)" stroke="#7A4711" stroke-width="1"/>
+              <text x="213" y="287" text-anchor="middle" fill="#2A140A" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="800" letter-spacing="0.08em">HẠT & LỬA • 5KG</text>
+            </svg>
+            <div class="craft-caption">
+              <span>Máy rang mẻ nhỏ 5 kg • Rang thủ công tại quán</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Giới thiệu Section -->
+    <section class="section about-section" id="gioi-thieu">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-heading">Về quán cà phê</span>
+          <h2 class="section-title">Giới thiệu</h2>
+          <div class="divider-ornament" aria-hidden="true">
+            <span class="line"></span>
+            <svg class="ornament-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2C8 2 6 5 6 9C6 14 12 21 12 21C12 21 18 14 18 9C18 5 16 2 12 2Z"/>
+            </svg>
+            <span class="line"></span>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Paragraph 1 Card -->
+          <div class="about-card">
+            <div class="card-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="16" cy="16" r="13"/>
+                <path d="M16 8V16L21 21"/>
+                <path d="M10 22C12 24 14 25 16 25C20 25 24 21 24 16"/>
+              </svg>
+            </div>
+            <p class="about-text">
+              Quán rang cà phê tại chỗ mỗi sáng bằng máy rang 5 kg, hạt lấy từ các nông trại nhỏ ở cao nguyên.
+            </p>
+          </div>
+
+          <!-- Paragraph 2 Card -->
+          <div class="about-card">
+            <div class="card-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="6" width="24" height="16" rx="2"/>
+                <line x1="8" y1="26" x2="24" y2="26"/>
+                <line x1="16" y1="22" x2="16" y2="26"/>
+                <path d="M9 13H15"/>
+              </svg>
+            </div>
+            <p class="about-text">
+              Quán có khu học tập yên tĩnh, ổ cắm ở mọi bàn và Wi-Fi miễn phí.
+            </p>
+          </div>
+        </div>
+
+        <!-- Highlights Bar -->
+        <div class="features-row">
+          <div class="feature-item">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </div>
+            <div class="feature-detail">
+              <strong class="feature-title">Máy rang 5 kg</strong>
+              <span class="feature-desc">Mẻ rang tươi mỗi sáng</span>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m-7 18v-3a2 2 0 0 1 2-2h3"/>
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+              </svg>
+            </div>
+            <div class="feature-detail">
+              <strong class="feature-title">Ổ cắm tại bàn</strong>
+              <span class="feature-desc">Học tập & làm việc</span>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+                <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
+                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+                <line x1="12" y1="20" x2="12.01" y2="20"/>
+              </svg>
+            </div>
+            <div class="feature-detail">
+              <strong class="feature-title">Wi-Fi miễn phí</strong>
+              <span class="feature-desc">Tốc độ cao ổn định</span>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              </svg>
+            </div>
+            <div class="feature-detail">
+              <strong class="feature-title">Không gian yên tĩnh</strong>
+              <span class="feature-desc">Dành cho sinh viên & freelancer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-heading">Đồ uống & Món ăn nhẹ</span>
+          <h2 class="section-title">Menu</h2>
+          <div class="divider-ornament" aria-hidden="true">
+            <span class="line"></span>
+            <svg class="ornament-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+            <span class="line"></span>
+          </div>
+          <p class="section-subtext">6 món tuyển chọn phục vụ mỗi ngày</p>
+        </div>
+
+        <div class="menu-grid">
+          <!-- Item 1 -->
+          <article class="menu-card">
+            <div class="menu-card-media" aria-hidden="true">
+              <svg class="drink-svg" viewBox="0 0 60 60" fill="none">
+                <!-- Iced Black Coffee SVG -->
+                <rect x="18" y="14" width="24" height="34" rx="4" fill="#3D1C06"/>
+                <path d="M15 12H45" stroke="#8C5338" stroke-width="2" stroke-linecap="round"/>
+                <!-- Ice cubes -->
+                <rect x="22" y="18" width="8" height="8" rx="2" fill="#E8EDF2" fill-opacity="0.6"/>
+                <rect x="30" y="26" width="7" height="7" rx="2" fill="#E8EDF2" fill-opacity="0.5"/>
+                <!-- Glass outline -->
+                <rect x="17" y="13" width="26" height="36" rx="4" stroke="#D1B498" stroke-width="1.8" fill="none"/>
+                <!-- Straw -->
+                <line x1="36" y1="6" x2="28" y2="38" stroke="#D97706" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <span class="menu-index">01</span>
+                <h3 class="menu-name">Cà phê đen đá</h3>
+                <span class="menu-dots" aria-hidden="true"></span>
+                <span class="menu-price">29.000đ</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 2 -->
+          <article class="menu-card">
+            <div class="menu-card-media" aria-hidden="true">
+              <svg class="drink-svg" viewBox="0 0 60 60" fill="none">
+                <!-- Milk Coffee SVG (Layered) -->
+                <rect x="18" y="14" width="24" height="20" fill="#4A2614"/>
+                <rect x="18" y="34" width="24" height="14" rx="3" fill="#FFF3E0"/>
+                <path d="M15 12H45" stroke="#8C5338" stroke-width="2" stroke-linecap="round"/>
+                <!-- Ice -->
+                <rect x="23" y="18" width="7" height="7" rx="2" fill="#FFFFFF" fill-opacity="0.6"/>
+                <!-- Glass outline -->
+                <rect x="17" y="13" width="26" height="36" rx="4" stroke="#D1B498" stroke-width="1.8" fill="none"/>
+                <!-- Straw -->
+                <line x1="36" y1="6" x2="26" y2="40" stroke="#C85A17" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <span class="menu-index">02</span>
+                <h3 class="menu-name">Cà phê sữa</h3>
+                <span class="menu-dots" aria-hidden="true"></span>
+                <span class="menu-price">32.000đ</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 3 -->
+          <article class="menu-card">
+            <div class="menu-card-media" aria-hidden="true">
+              <svg class="drink-svg" viewBox="0 0 60 60" fill="none">
+                <!-- Bac Xiu SVG (Heavy condensed milk layer) -->
+                <rect x="18" y="14" width="24" height="12" fill="#522C17"/>
+                <rect x="18" y="26" width="24" height="22" rx="3" fill="#FFF8E7"/>
+                <!-- Glass outline -->
+                <rect x="17" y="13" width="26" height="36" rx="4" stroke="#D1B498" stroke-width="1.8" fill="none"/>
+                <!-- Ice -->
+                <rect x="25" y="18" width="8" height="8" rx="2" fill="#FFFFFF" fill-opacity="0.7"/>
+                <line x1="36" y1="6" x2="29" y2="35" stroke="#D97706" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <span class="menu-index">03</span>
+                <h3 class="menu-name">Bạc xỉu</h3>
+                <span class="menu-dots" aria-hidden="true"></span>
+                <span class="menu-price">35.000đ</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 4 -->
+          <article class="menu-card">
+            <div class="menu-card-media" aria-hidden="true">
+              <svg class="drink-svg" viewBox="0 0 60 60" fill="none">
+                <!-- Cold Brew Cam Sả SVG -->
+                <rect x="18" y="16" width="24" height="32" rx="4" fill="#663311"/>
+                <!-- Orange slice -->
+                <circle cx="25" cy="24" r="6" fill="#FFA500" stroke="#FF7700" stroke-width="1"/>
+                <line x1="25" y1="18" x2="25" y2="30" stroke="#FFF" stroke-width="0.8"/>
+                <line x1="19" y1="24" x2="31" y2="24" stroke="#FFF" stroke-width="0.8"/>
+                <!-- Lemongrass stalk -->
+                <line x1="38" y1="8" x2="27" y2="38" stroke="#88B04B" stroke-width="2.5" stroke-linecap="round"/>
+                <!-- Glass outline -->
+                <rect x="17" y="15" width="26" height="34" rx="4" stroke="#D1B498" stroke-width="1.8" fill="none"/>
+              </svg>
+            </div>
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <span class="menu-index">04</span>
+                <h3 class="menu-name">Cold brew cam sả</h3>
+                <span class="menu-dots" aria-hidden="true"></span>
+                <span class="menu-price">45.000đ</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 5 -->
+          <article class="menu-card">
+            <div class="menu-card-media" aria-hidden="true">
+              <svg class="drink-svg" viewBox="0 0 60 60" fill="none">
+                <!-- Latte Hat Phi Cup SVG -->
+                <path d="M14 22H42V36C42 42 36 46 28 46C20 46 14 42 14 36V22Z" fill="#FBF5EE" stroke="#A66E4E" stroke-width="2"/>
+                <path d="M42 26H46C49 26 50 30 48 34C46 36 42 36 42 36" stroke="#A66E4E" stroke-width="2" stroke-linecap="round" fill="none"/>
+                <!-- Latte Art Foam Heart -->
+                <ellipse cx="28" cy="24" rx="12" ry="3.5" fill="#C88E62"/>
+                <path d="M26 23C24 21 22 23 26 26C30 23 28 21 26 23Z" fill="#FFF"/>
+                <!-- Saucer -->
+                <ellipse cx="28" cy="48" rx="20" ry="4" stroke="#A66E4E" stroke-width="2" fill="#F4EAE1"/>
+              </svg>
+            </div>
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <span class="menu-index">05</span>
+                <h3 class="menu-name">Latte hạt phỉ</h3>
+                <span class="menu-dots" aria-hidden="true"></span>
+                <span class="menu-price">49.000đ</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 6 -->
+          <article class="menu-card">
+            <div class="menu-card-media" aria-hidden="true">
+              <svg class="drink-svg" viewBox="0 0 60 60" fill="none">
+                <!-- Garlic Butter Bread SVG -->
+                <ellipse cx="30" cy="30" rx="20" ry="12" fill="#E8A858" stroke="#A8611C" stroke-width="2"/>
+                <!-- Bread slash cuts -->
+                <line x1="22" y1="23" x2="25" y2="37" stroke="#8C4A27" stroke-width="2" stroke-linecap="round"/>
+                <line x1="29" y1="21" x2="32" y2="39" stroke="#8C4A27" stroke-width="2" stroke-linecap="round"/>
+                <line x1="36" y1="23" x2="39" y2="37" stroke="#8C4A27" stroke-width="2" stroke-linecap="round"/>
+                <!-- Parsley flecks -->
+                <circle cx="24" cy="30" r="1.2" fill="#4E8C3B"/>
+                <circle cx="31" cy="27" r="1.2" fill="#4E8C3B"/>
+                <circle cx="35" cy="33" r="1.2" fill="#4E8C3B"/>
+              </svg>
+            </div>
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <span class="menu-index">06</span>
+                <h3 class="menu-name">Bánh mì bơ tỏi</h3>
+                <span class="menu-dots" aria-hidden="true"></span>
+                <span class="menu-price">25.000đ</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Đánh giá của khách Section -->
+    <section class="section testimonial-section" id="danh-gia">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-heading">Cảm nhận thực tế</span>
+          <h2 class="section-title">Đánh giá của khách</h2>
+          <div class="divider-ornament" aria-hidden="true">
+            <span class="line"></span>
+            <svg class="ornament-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+            <span class="line"></span>
+          </div>
+        </div>
+
+        <div class="testimonial-grid">
+          <!-- Testimonial 1 -->
+          <blockquote class="testimonial-card">
+            <div class="quote-mark" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="currentColor">
+                <path d="M10 8c-3.3 0-6 2.7-6 6v10h10V14H8c0-1.1.9-2 2-2h1V8h-1zm14 0c-3.3 0-6 2.7-6 6v10h10V14h-6c0-1.1.9-2 2-2h1V8h-1z"/>
+              </svg>
+            </div>
+            <p class="testimonial-text">
+              "Chỗ ngồi yên tĩnh, ngồi học cả buổi vẫn thoải mái."
+            </p>
+            <footer class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">
+                <span>MA</span>
+              </div>
+              <div class="author-meta">
+                <cite class="author-name">Minh Anh</cite>
+                <span class="author-role">sinh viên</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <!-- Testimonial 2 -->
+          <blockquote class="testimonial-card">
+            <div class="quote-mark" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="currentColor">
+                <path d="M10 8c-3.3 0-6 2.7-6 6v10h10V14H8c0-1.1.9-2 2-2h1V8h-1zm14 0c-3.3 0-6 2.7-6 6v10h10V14h-6c0-1.1.9-2 2-2h1V8h-1z"/>
+              </svg>
+            </div>
+            <p class="testimonial-text">
+              "Cold brew cam sả rất thơm, không bị gắt."
+            </p>
+            <footer class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">
+                <span>QB</span>
+              </div>
+              <div class="author-meta">
+                <cite class="author-name">Quốc Bảo</cite>
+                <span class="author-role">lập trình viên</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <!-- Testimonial 3 -->
+          <blockquote class="testimonial-card">
+            <div class="quote-mark" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="currentColor">
+                <path d="M10 8c-3.3 0-6 2.7-6 6v10h10V14H8c0-1.1.9-2 2-2h1V8h-1zm14 0c-3.3 0-6 2.7-6 6v10h10V14h-6c0-1.1.9-2 2-2h1V8h-1z"/>
+              </svg>
+            </div>
+            <p class="testimonial-text">
+              "Mùi rang cà phê buổi sáng làm mình muốn ghé mỗi ngày."
+            </p>
+            <footer class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">
+                <span>TH</span>
+              </div>
+              <div class="author-meta">
+                <cite class="author-name">Thu Hà</cite>
+                <span class="author-role">nhân viên thiết kế</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Đặt Bàn Section -->
+    <section class="section booking-section" id="dat-ban">
+      <div class="container">
+        <div class="booking-wrapper">
+          <div class="booking-header text-center">
+            <span class="sub-heading">Giữ chỗ trước</span>
+            <h2 class="section-title">Form đặt bàn</h2>
+            <p class="booking-subtitle">Đặt chỗ làm việc, học tập hoặc gặp gỡ tại Hạt & Lửa</p>
+          </div>
+
+          <form id="bookingForm" class="booking-form" novalidate>
+            <div class="form-row">
+              <!-- Họ tên -->
+              <div class="form-group">
+                <label for="fullName" class="form-label">
+                  Họ tên <span class="required" aria-hidden="true">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <input type="text" id="fullName" name="fullName" class="form-input" placeholder="Nguyễn Văn A" required>
+                </div>
+                <span class="field-error" id="fullNameError" role="alert"></span>
+              </div>
+
+              <!-- Số điện thoại -->
+              <div class="form-group">
+                <label for="phone" class="form-label">
+                  Số điện thoại <span class="required" aria-hidden="true">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <input type="tel" id="phone" name="phone" class="form-input" placeholder="0900 xxx xxx" required>
+                </div>
+                <span class="field-error" id="phoneError" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="form-row form-row-three">
+              <!-- Ngày -->
+              <div class="form-group">
+                <label for="date" class="form-label">
+                  Ngày <span class="required" aria-hidden="true">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <input type="date" id="date" name="date" class="form-input" required>
+                </div>
+                <span class="field-error" id="dateError" role="alert"></span>
+              </div>
+
+              <!-- Giờ -->
+              <div class="form-group">
+                <label for="time" class="form-label">
+                  Giờ <span class="required" aria-hidden="true">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <input type="time" id="time" name="time" class="form-input" min="07:00" max="22:00" required>
+                </div>
+                <span class="field-error" id="timeError" role="alert"></span>
+              </div>
+
+              <!-- Số người (1–10) -->
+              <div class="form-group">
+                <label for="guests" class="form-label">
+                  Số người (1–10) <span class="required" aria-hidden="true">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <input type="number" id="guests" name="guests" class="form-input" min="1" max="10" placeholder="1–10" required>
+                </div>
+                <span class="field-error" id="guestsError" role="alert"></span>
+              </div>
+            </div>
+
+            <!-- Ghi chú -->
+            <div class="form-group">
+              <label for="note" class="form-label">Ghi chú</label>
+              <textarea id="note" name="note" class="form-textarea" rows="3" placeholder="Yêu cầu về vị trí ngồi, ổ cắm gần bàn..."></textarea>
+            </div>
+
+            <!-- Nút gửi đặt bàn -->
+            <div class="form-submit-wrap text-center">
+              <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                <span>Gửi đặt bàn</span>
+                <svg class="btn-arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M5 10H15M15 10L10 5M15 10L10 15"/>
+                </svg>
+              </button>
+            </div>
+          </form>
+
+          <!-- Success Alert Message (Shown after submit) -->
+          <div id="bookingSuccess" class="booking-success" role="status" aria-live="polite" hidden>
+            <div class="success-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M20 6L9 17L4 12"/>
+              </svg>
+            </div>
+            <h3 class="success-title">Đặt bàn thành công!</h3>
+            <p class="success-detail" id="bookingDetailText">Cảm ơn bạn. Hạt & Lửa đã ghi nhận thông tin đặt chỗ.</p>
+            <button type="button" class="btn btn-secondary btn-sm" id="resetBookingBtn">Đặt lại bàn khác</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Thông tin chung & Footer -->
+  <footer class="site-footer" id="lien-he">
+    <div class="container footer-container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Slogan -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <svg class="brand-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="20" cy="20" r="19" fill="#3D1C06" stroke="#C85A17" stroke-width="2"/>
+              <path d="M14 26C11.5 23 11 18.5 13.5 15C16.5 11 21 11.5 24 13.5C21 14 17.5 16.5 18 20.5C18.5 23.5 20.5 25 21 27C18.5 28 15.5 27.5 14 26Z" fill="#F4EAE1"/>
+              <path d="M21 27C21.5 25 24.5 22.5 24 18.5C23.5 15.5 21 14 24 13.5C27 15 29 18.5 28 22.5C27 26 23.5 27.5 21 27Z" fill="#E67E22"/>
+            </svg>
+            <span class="footer-title">Hạt & Lửa</span>
+          </div>
+          <p class="footer-slogan">"Rang từng mẻ nhỏ, uống từng ngụm chậm."</p>
+          <p class="footer-est">Năm thành lập: 2021</p>
+        </div>
+
+        <!-- Col 2: Thông tin chung -->
+        <div class="footer-info">
+          <h4 class="footer-heading">Thông tin chung</h4>
+          <ul class="footer-info-list">
+            <li>
+              <span class="info-label">Địa chỉ:</span>
+              <span class="info-val">12 Hẻm Lò Rang (địa chỉ giả lập)</span>
+            </li>
+            <li>
+              <span class="info-label">Giờ mở cửa:</span>
+              <span class="info-val">7:00 – 22:00 mỗi ngày</span>
+            </li>
+            <li>
+              <span class="info-label">Điện thoại:</span>
+              <a href="tel:0900000000" class="info-val info-link">0900 000 000</a>
+            </li>
+            <li>
+              <span class="info-label">Năm thành lập:</span>
+              <span class="info-val">2021</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Quick Navigation -->
+        <div class="footer-nav">
+          <h4 class="footer-heading">Mục lục</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#hero">Trang chủ</a></li>
+            <li><a href="#gioi-thieu">Giới thiệu</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#danh-gia">Đánh giá của khách</a></li>
+            <li><a href="#dat-ban">Form đặt bàn</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom text-center">
+        <p>© 2021 - 2026 Hạt & Lửa. Khẩu hiệu: "Rang từng mẻ nhỏ, uống từng ngụm chậm."</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
